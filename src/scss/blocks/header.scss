@@ -1,1 +1,101 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.toggle-menu {
+  position: absolute;
+  top: 3rem;
+  left: 20rem;
+  cursor: pointer;
+  width: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .toggle-menu {
+    display: none;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include responsive(laptop) {
+    flex-direction: row;
+    margin: 2rem;
+    color: #2c2830;
+  }
+
+  &__start {
+    @include responsive(laptop) {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+
+  &__name {
+    @include responsive(laptop) {
+      cursor: pointer;
+    }
+  }
+
+  &__logo {
+    @include responsive(laptop) {
+      cursor: pointer;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+  }
+}
+
+.main-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0rem;
+  font-weight: bold;
+  height: 500px;
+  background-size: cover;
+  @include responsive(laptop) {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 2rem;
+    font-weight: normal;
+    background-color: transparent;
+    height: 50px;
+  }
+}
+
+.main-nav {
+  @include responsive(laptop) {
+  }
+}
+
+.main-menu-item {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  margin-top: 0.5rem;
+  @include responsive(laptop) {
+    font-size: 1rem;
+    color: #2c2830;
+    line-height: 1rem;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1.5px solid #2c2830;
+  }
+}

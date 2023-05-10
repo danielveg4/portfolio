@@ -1,0 +1,57 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
+
+.principal {
+  border: 1.5px solid #2c2830;
+  border-bottom: none;
+  margin: 2rem;
+  padding: 2rem;
+  @include responsive(laptop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1c191f;
+  }
+  &__title {
+    @include responsive(laptop) {
+      margin-top: 8rem;
+      font-weight: 900;
+      font-size: 3rem;
+    }
+  }
+  &__subtitle {
+    @include responsive(laptop) {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-top: -1.5rem;
+      padding-top: 0.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border-top: 1px solid #2c2830;
+    }
+  }
+  &__boxes {
+    @include responsive(laptop) {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: row;
+      gap: 14rem;
+    }
+  }
+  &__about {
+    @include responsive(laptop) {
+      border: 1.5px solid #2c2830;
+      padding: 1rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+  &__socialmedia {
+    @include responsive(laptop) {
+      border: 1.5px solid #2c2830;
+      padding: 1rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+}

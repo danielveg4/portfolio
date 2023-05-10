@@ -2,13 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>pf | daniel vega</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__start">
+        <div class="header__logo">dv</div>
+        <div class="header__name">daniel vega</div>
+      </div>
+      <div id="toggle-menu" class="toggle-menu">
+        <img src="assets/images/icon-hamburger.svg" alt="" />
+        <div class="magicbox"></div>
+      </div>
+      <nav id="main-nav" class="main-nav">
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <a href="#" class="main-menu-link">home</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="#" class="main-menu-link">projects</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="#" class="main-menu-link">about</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="#" class="main-menu-link">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="principal">
+      <h1 class="principal__title">hi, I am daniel</h1>
+      <h2 class="principal__subtitle">web developer</h2>
+      <div class="principal__boxes">
+        <div class="principal__about">about</div>
+        <div class="principal__socialmedia">social</div>
+      </div>
+    </div>
+    <div class="projects">
+      <h1 class="projects__title">projects</h1>
+      <div class="projects__container">
+        <div class="projects__project">
+          <div class="projects__name">insure</div>
+          <div class="projects__image"></div>
+          <div class="projects__info">
+            <div class="projects__live">live</div>
+            <div class="projects__code">code</div>
+          </div>
+        </div>
+        <div class="projects__project">
+          <div class="projects__name">easybank</div>
+          <div class="projects__image"></div>
+          <div class="projects__info">
+            <div class="projects__live">live</div>
+            <div class="projects__code">code</div>
+          </div>
+        </div>
+        <div class="projects__project">
+          <div class="projects__name">typemaster</div>
+          <div class="projects__image"></div>
+          <div class="projects__info">
+            <div class="projects__live">live</div>
+            <div class="projects__code">code</div>
+          </div>
+        </div>
+        <div class="projects__project">
+          <div class="projects__name">clipboard</div>
+          <div class="projects__image"></div>
+          <div class="projects__info">
+            <div class="projects__live">live</div>
+            <div class="projects__code">code</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
