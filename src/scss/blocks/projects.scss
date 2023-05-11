@@ -13,19 +13,79 @@
     flex-direction: column;
     align-items: center;
     color: #1c191f;
+    padding-top: 3rem;
   }
   &__title {
+    margin-top: 8rem;
+    font-size: 3rem;
+    padding-top: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border-top: 1px solid #1c191f;
   }
   &__container {
+    @include responsive(laptop) {
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      color: #1c191f;
+    }
   }
   &__project {
+    @include responsive(laptop) {
+      display: flex;
+      flex-direction: row;
+      color: #1c191f;
+    }
   }
   &__name {
   }
   &__image {
   }
   &__info {
+    @include responsive(laptop) {
+      position: relative;
+      right: 18%;
+      font-size: 1.3rem;
+    }
   }
   &__live {
+  }
+}
+
+.image__insure1 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 60%;
+    left: 18%;
+    opacity: 0.9;
+  }
+}
+.image__insure2 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 10%;
+    left: 12%;
+    top: -19%;
+    z-index: 10;
+  }
+}
+.image__insure3 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 15%;
+    z-index: 10;
+    top: -30%;
+    left: 43%;
+    opacity: 0.9;
+  }
+}
+.image__insure4 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 15%;
+    z-index: 10;
+    top: -60%;
+    left: 74%;
   }
 }
