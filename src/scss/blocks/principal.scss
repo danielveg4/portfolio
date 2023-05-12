@@ -41,17 +41,16 @@
   &__about {
     @include responsive(laptop) {
       border: 1.5px solid #2c2830;
-      padding: 1rem;
-      padding-left: 5rem;
-      padding-right: 5rem;
+      padding: 2rem;
+      width: 250px;
     }
   }
-  &__socialmedia {
+  &__photo {
     @include responsive(laptop) {
       border: 1.5px solid #2c2830;
-      padding: 1rem;
-      padding-left: 5rem;
-      padding-right: 5rem;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
     }
   }
 }

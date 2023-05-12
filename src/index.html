@@ -17,7 +17,7 @@
     <header class="header">
       <div class="header__start">
         <div class="header__logo">dv</div>
-        <div class="header__name">daniel vega</div>
+        <h1 class="header__name">daniel vega</h1>
       </div>
       <div id="toggle-menu" class="toggle-menu">
         <img src="assets/images/icon-hamburger.svg" alt="" />
@@ -41,54 +41,73 @@
       </nav>
     </header>
     <div class="principal">
-      <h1 class="principal__title">hi, I am daniel</h1>
-      <h2 class="principal__subtitle">web developer</h2>
+      <h2 class="principal__title">hi, I am daniel</h2>
+      <h3 class="principal__subtitle">web developer</h3>
       <div class="principal__boxes">
-        <div class="principal__about">about</div>
-        <div class="principal__socialmedia">social</div>
+        <div class="principal__about">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex amet ut
+          provident, fugit molestiae nihil similique dolorum temporibus quaerat
+          veniam at accusamus facilis vero, alias fugiat. Inventore rerum nam
+          facere!
+        </div>
+        <div class="principal__photo"></div>
       </div>
     </div>
     <div class="projects">
-      <h1 class="projects__title">projects</h1>
+      <h2 class="projects__title">projects</h2>
       <div class="projects__container">
-        <div class="projects__project">
-          <div class="projects__image">
+        <ul class="projects-menu">
+          <li class="projects-menu__item">
+            <h3 id="menu-insure" class="projects-menu__title">insure</h3>
+          </li>
+          <li class="projects-menu__titem">
+            <h3 id="menu-easybank" class="projects-menu__title">easybank</h3>
+          </li>
+          <li class="projects-menu__titem">
+            <h3 id="menu-typemaster" class="projects-menu__title">typemaster</h3>
+          </li>
+          <li class="projects-menu__titem">
+            <h3 id="menu-clipboard" class="projects-menu__title">clipboard</h3>
+          </li>
+        </ul>
+        <div id="project-insure" class="project">
+          <div class="project__image">
             <img class="image__insure1" src="assets/images/insure1.png" />
             <img class="image__insure2" src="assets/images/insure2.png" />
             <img class="image__insure3" src="assets/images/insure3.png" />
             <img class="image__insure4" src="assets/images/insure4.png" />
           </div>
-          <div class="projects__info">
-            <h2 class="projects__name">insure</h2>
-            <p class="projects__live">live</p>
-            <p class="projects__code">code</p>
+          <div class="project__info">
+            <h3 class="project__name">insure</h3>
+            <p class="project__live">live</p>
+            <p class="project__code">code</p>
           </div>
         </div>
-        <div class="projects__project">
-          <div class="projects__image"></div>
-          <div class="projects__info">
-            <h2 class="projects__name">easybank</h2>
-            <p class="projects__live">live</p>
-            <p class="projects__code">code</p>
+        <div id="project-easybank" class="project hide">
+          <div class="project__image">aqui cascamos otrooooooooooooooooooooooooooo</div>
+          <div class="project__info">
+            <h3 class="project__name">easybank</h3>
+            <p class="project__live">live</p>
+            <p class="project__code">code</p>
           </div>
         </div>
-        <div class="projects__project">
-          <div class="projects__image"></div>
-          <div class="projects__info">
-            <h2 class="projects__name">typemaster</h2>
-            <p class="projects__live">live</p>
-            <p class="projects__code">code</p>
+        <div id="project-typemaster" class="project hide">
+          <div class="project__image"></div>
+          <div class="project__info">
+            <h3 class="project__name">typemaster</h3>
+            <p class="project__live">live</p>
+            <p class="project__code">code</p>
           </div>
         </div>
-        <div class="projects__project">
-          <div class="projects__image"></div>
-          <div class="projects__info">
-            <h2 class="projects__name">clipboard</h2>
-            <p class="projects__live">live</p>
-            <p class="projects__code">code</p>
+        <div id="project-clipboard" class="project hide">
+          <div class="project__image"></div>
+          <div class="project__info">
+            <h3 class="project__name">clipboard</h3>
+            <p class="project__live">live</p>
+            <p class="project__code">code</p>
           </div>
         </div>
-      </div>
+      </h3>
     </div>
     <script type="module" src="./js/index.js"></script>
   </body>

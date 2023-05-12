@@ -31,13 +31,34 @@
       color: #1c191f;
     }
   }
-  &__project {
-    @include responsive(laptop) {
-      display: flex;
-      flex-direction: row;
-      color: #1c191f;
-    }
+}
+
+.second-menu {
+  @include responsive(laptop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8rem;
+    margin-bottom: 5rem;
   }
+}
+
+.second-menu-item {
+  @include responsive(laptop) {
+    font-size: 1rem;
+    color: #2c2830;
+    line-height: 1rem;
+    border-bottom: 1px solid #2c2830;
+  }
+}
+
+.project {
+  @include responsive(laptop) {
+    display: flex;
+    flex-direction: row;
+    color: #1c191f;
+  }
+
   &__name {
   }
   &__image {
