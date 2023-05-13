@@ -29,10 +29,16 @@ function handleEasybankProject() {
 
 function handleTypemasterProject() {
   projectTypemasterElement.classList.remove("hide");
+  projectClipboardElement.classList.add("hide");
+  projectInsureElement.classList.add("hide");
+  projectEasybankElement.classList.add("hide");
 }
 
 function handleClipboardProject() {
   projectClipboardElement.classList.remove("hide");
+  projectTypemasterElement.classList.add("hide");
+  projectInsureElement.classList.add("hide");
+  projectEasybankElement.classList.add("hide");
 }
 
 insureMenuElement.addEventListener("click", handleInsureProject);

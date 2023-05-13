@@ -33,7 +33,7 @@
   }
 }
 
-.second-menu {
+.projects-menu {
   @include responsive(laptop) {
     display: flex;
     flex-direction: row;
@@ -43,7 +43,7 @@
   }
 }
 
-.second-menu-item {
+.second-menu__item {
   @include responsive(laptop) {
     font-size: 1rem;
     color: #2c2830;
@@ -57,11 +57,16 @@
     display: flex;
     flex-direction: row;
     color: #1c191f;
+    position: absolute;
+    top: 88rem;
+    left: 0rem;
+
   }
 
   &__name {
   }
   &__image {
+    
   }
   &__info {
     @include responsive(laptop) {
@@ -87,7 +92,7 @@
     position: relative;
     width: 10%;
     left: 12%;
-    top: -19%;
+    top: -190px;
     z-index: 10;
   }
 }
@@ -96,7 +101,7 @@
     position: relative;
     width: 15%;
     z-index: 10;
-    top: -30%;
+    top: -300px;
     left: 43%;
     opacity: 0.9;
   }
@@ -106,7 +111,188 @@
     position: relative;
     width: 15%;
     z-index: 10;
-    top: -60%;
+    top: -600px;
     left: 74%;
   }
+}
+
+
+.image__easy1 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 50%;
+    left: 27%;
+    opacity: 0.9;
+  }
+}
+.image__easy2 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 16%;
+    left: 19%;
+    top: 60px;
+    z-index: 10;
+  }
+}
+.image__easy3 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 12%;
+    z-index: 10;
+    top: -35%;
+    left: 120px;
+    opacity: 0.9;
+  }
+}
+.image__easy4 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 10%;
+    z-index: 10;
+    top: -300px;
+    left: 74%;
+  }
+}
+
+.image__easy5 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 15%;
+    z-index: 10;
+    top: -480px;
+    left: 49%;
+  }
+}
+
+
+.image__type1 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 50%;
+    left: 27%;
+    opacity: 0.9;
+  }
+}
+.image__type2 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 16%;
+    left: 19%;
+    top: 60px;
+    z-index: 10;
+  }
+}
+.image__type3 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 12%;
+    z-index: 10;
+    top: -350px;
+    left: 12%;
+    opacity: 0.9;
+  }
+}
+.image__type4 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 10%;
+    z-index: 10;
+    top: -300px;
+    left: 74%;
+  }
+}
+
+.image__type5 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 15%;
+    z-index: 10;
+    top: -480px;
+    left: 49%;
+  }
+}
+
+.image__clip1 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 50%;
+    top: 200px;
+    left: 27%;
+    opacity: 0.9;
+  }
+}
+.image__clip2 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 16%;
+    left: 30%;
+    top: -280px;
+    z-index: 10;
+  }
+}
+.image__clip3 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 12%;
+    z-index: 10;
+    top: -290px;
+    left: 12%;
+    opacity: 0.9;
+  }
+}
+.image__clip4 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 15%;
+    z-index: 10;
+    top: -550px;
+    left: 57%;
+  }
+}
+
+.image__clip5 {
+  @include responsive(laptop) {
+    position: relative;
+    width: 15%;
+    z-index: 10;
+    top: -580px;
+    left: 79%;
+  }
+}
+
+
+.project__insure{
+  position: relative;
+  top: -125px;
+  left: -920px;
+  border-bottom: 1px solid #2c2830;
+  width: 120px;
+  height: 4px;
+}
+
+.project__easy{
+  position: relative;
+  top: -125px;
+  left: -700px;
+  border-bottom: 1px solid #2c2830;
+  width: 120px;
+  height: 4px;
+}
+
+.project__type{
+  position: relative;
+  top: -125px;
+  left: -463px;
+  border-bottom: 1px solid #2c2830;
+  width: 120px;
+  height: 4px;
+}
+
+.project__clip{
+  position: relative;
+  top: -125px;
+  left: -287px;
+  border-bottom: 1px solid #2c2830;
+  width: 120px;
+  height: 4px;
 }
