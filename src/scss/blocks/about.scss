@@ -1,2 +1,70 @@
 @use "../mixins/responsive.scss" as *;
 @use "../mixins/pseudo.scss" as *;
+
+.about{
+    @include responsive(laptop) {
+        padding: 10rem;
+        padding-top: 55rem;
+        display: flex;
+        flex-direction: row;
+      }
+&__info{
+    @include responsive(laptop) {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+&__name{
+    @include responsive(laptop) {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}
+&__prof{
+    @include responsive(laptop) {
+        font-size: 1.8rem;
+        margin-top: -2rem;
+
+    }
+}
+&__text{
+    @include responsive(laptop) {
+        max-width: 35%;
+
+    }
+}
+&__skills{
+    @include responsive(laptop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        justify-items: right;
+        padding-top: 8rem;
+        
+    }
+}
+&__skill{
+    @include responsive(laptop) {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: right;
+        align-items: center;
+
+    }
+}
+
+&__leng{
+    @include responsive(laptop) {
+        font-weight: bold;
+
+    }
+}
+&__logo{
+    @include responsive(laptop) {
+        height: 40px;
+
+    }
+}
+}

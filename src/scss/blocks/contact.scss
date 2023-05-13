@@ -1,0 +1,56 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
+
+
+.contact{
+        @include responsive(laptop) {
+            width: 100%;
+            justify-items: center;
+            justify-content: center;
+            text-justify: center;
+            padding-top: 8rem;
+            padding-bottom: 10rem;
+            
+        }
+&__title{
+        @include responsive(laptop) {
+            font-size: 3.5rem;
+            font-weight: 800; 
+            display: flex;
+            text-justify: center; 
+            justify-content: center;
+        }
+}
+&__socials{
+        @include responsive(laptop) {
+            display: flex;
+            flex-direction: row;
+            gap: 10rem;
+            text-justify: center; 
+            justify-content: center; 
+            padding-top: 8rem;          
+    
+        }
+}
+&__social{
+        @include responsive(laptop) {
+            
+            
+            
+        }
+}
+&__name{
+        @include responsive(laptop) {
+            font-size: 1.8rem;
+            
+    
+        }
+
+}
+&__flex{
+        @include responsive(laptop) {
+            
+    
+        }
+}
+}
