@@ -1,6 +1,7 @@
 @use "../mixins/responsive.scss" as *;
 @use "../mixins/pseudo.scss" as *;
 
+
 .about{
     @include responsive(laptop) {
         padding: 10rem;
@@ -68,3 +69,23 @@
     }
 }
 }
+
+
+.contactline {
+    @include responsive(laptop) {
+    width: 480px;
+    height: 1.5px;
+    background-color: #1c191f;
+    }
+}
+
+.footerline {
+    @include responsive(laptop) {
+    width: 105%;
+    height: 1.5px;
+    background-color: #1c191f;
+    position: relative;
+    margin: -2rem;
+    }
+}
+

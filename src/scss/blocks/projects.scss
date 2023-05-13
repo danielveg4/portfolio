@@ -260,39 +260,9 @@
   }
 }
 
-
-.project__insure{
-  position: relative;
-  top: -125px;
-  left: -920px;
-  border-bottom: 1px solid #2c2830;
-  width: 120px;
-  height: 4px;
+li:hover {
+  @include responsive(laptop) {
+  border: 1px solid #2c2830;
+  }
 }
 
-.project__easy{
-  position: relative;
-  top: -125px;
-  left: -700px;
-  border-bottom: 1px solid #2c2830;
-  width: 120px;
-  height: 4px;
-}
-
-.project__type{
-  position: relative;
-  top: -125px;
-  left: -463px;
-  border-bottom: 1px solid #2c2830;
-  width: 120px;
-  height: 4px;
-}
-
-.project__clip{
-  position: relative;
-  top: -125px;
-  left: -287px;
-  border-bottom: 1px solid #2c2830;
-  width: 120px;
-  height: 4px;
-}
