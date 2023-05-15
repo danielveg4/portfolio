@@ -8,6 +8,10 @@
   margin: 2rem;
   margin-top: -2rem;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1c191f;
   @include responsive(laptop) {
     display: flex;
     flex-direction: column;
@@ -16,19 +20,26 @@
     padding-top: 3rem;
   }
   &__title {
+    font-size: 2.2rem;
+    @include responsive(laptop) {
     margin-top: 8rem;
     font-size: 3rem;
     padding-top: 10rem;
     padding-left: 10rem;
     padding-right: 10rem;
     border-top: 1px solid #1c191f;
+    }
   }
   &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     @include responsive(laptop) {
       margin-top: 5rem;
       display: flex;
       flex-direction: column;
       color: #1c191f;
+      text-align: left;
     }
   }
 }
@@ -53,6 +64,7 @@
 }
 
 .project {
+  display: none;
   @include responsive(laptop) {
     display: flex;
     flex-direction: row;

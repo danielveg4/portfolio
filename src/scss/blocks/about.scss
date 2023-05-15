@@ -3,6 +3,10 @@
 
 
 .about{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 5rem;
     @include responsive(laptop) {
         padding: 10rem;
         padding-top: 55rem;
@@ -10,19 +14,25 @@
         flex-direction: row;
       }
 &__info{
-    @include responsive(laptop) {
+    text-align: center;
+        @include responsive(laptop) {
         display: flex;
         flex-direction: column;
+        text-align: left;
 
     }
 }
 &__name{
+    text-align: center;
+    font-size: 2.5rem;
     @include responsive(laptop) {
         font-size: 3rem;
         font-weight: 900;
     }
 }
 &__prof{
+    margin-top: 0;
+    font-size: 1.4rem;
     @include responsive(laptop) {
         font-size: 1.8rem;
         margin-top: -2rem;
@@ -46,6 +56,11 @@
     }
 }
 &__skill{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
     @include responsive(laptop) {
         display: flex;
         flex-direction: row;
@@ -57,18 +72,21 @@
 }
 
 &__leng{
+    font-weight: bold;
     @include responsive(laptop) {
         font-weight: bold;
 
     }
 }
 &__logo{
+    height: 40px;
     @include responsive(laptop) {
         height: 40px;
 
     }
 }
 }
+
 
 
 .contactline {
@@ -80,6 +98,12 @@
 }
 
 .footerline {
+        width: 127%;
+        height: 1px;
+        background-color: #1c191f;
+        position: relative;
+        margin: -2rem;
+        
     @include responsive(laptop) {
     width: 105%;
     height: 1.5px;
