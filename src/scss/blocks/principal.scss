@@ -58,6 +58,7 @@
     border: 1.5px solid #2c2830;
     padding: 2rem;
     width: 250px;
+    font-size: 1.1rem;
     @include responsive(laptop) {
       width: 250px;
     }

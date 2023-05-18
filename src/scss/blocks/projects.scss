@@ -85,6 +85,10 @@
     }
   }
   &__live {
+    text-decoration: underline;
+  }
+  &__code {
+    text-decoration: underline;
   }
 }
 
