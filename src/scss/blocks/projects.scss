@@ -72,11 +72,6 @@
 
   }
 
-  &__name {
-  }
-  &__image {
-    
-  }
   &__info {
     @include responsive(laptop) {
       position: relative;
@@ -128,6 +123,8 @@
     left: 74%;
   }
 }
+
+
 
 
 .image__easy1 {
