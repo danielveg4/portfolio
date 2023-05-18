@@ -11,12 +11,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #1c191f;
+  color: var(--principal);
   @include responsive(laptop) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #1c191f;
     padding-top: 3rem;
   }
   &__title {
@@ -31,15 +30,13 @@
     }
   }
   &__container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    display: none;
     @include responsive(laptop) {
       margin-top: 5rem;
       display: flex;
       flex-direction: column;
-      color: #1c191f;
       text-align: left;
+      color: var(--principal);
     }
   }
 }
@@ -57,7 +54,7 @@
 .second-menu__item {
   @include responsive(laptop) {
     font-size: 1rem;
-    color: #2c2830;
+    color: var(--principal);
     line-height: 1rem;
     border-bottom: 1px solid #2c2830;
   }
@@ -65,10 +62,10 @@
 
 .project {
   display: none;
+  color: var(--principal);
   @include responsive(laptop) {
     display: flex;
     flex-direction: row;
-    color: #1c191f;
     position: absolute;
     top: 88rem;
     left: 0rem;
@@ -278,3 +275,51 @@ li:hover {
   }
 }
 
+
+.proyectmob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  color: var(--principal);
+  text-decoration: underline;
+  @include responsive(laptop) {
+    display: none;
+    }
+&__name {
+  color: var(--principal);
+  font-size: 2rem;
+  text-decoration: underline;
+  @include responsive(laptop) {
+    display: none;
+    }
+}
+&__capture{
+  opacity: 0.9;
+  @include responsive(laptop) {
+    display: none;
+    }
+}
+&__text{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  text-align: justify;
+  justify-content: space-between;
+  @include responsive(laptop) {
+    display: none;
+    }
+}
+&__live{
+  display: flex;
+  flex-direction: row;
+  @include responsive(laptop) {
+    display: none;
+    }
+}
+&__code{
+  @include responsive(laptop) {
+    display: none;
+    }
+}
+}

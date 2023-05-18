@@ -79,7 +79,7 @@
   top: 0rem;
   font-weight: bold;
   height: 415px;
-  background-color: #888888;
+  background-color: #BEBEBE;
   margin: 4rem;
   @include responsive(laptop) {
     align-items: center;
@@ -97,12 +97,11 @@
 
 .main-menu-item {
   font-size: 1.1rem;
-  color: #2c2830;
+  color: var(--principal);
   padding: 1rem;
   margin-top: 2.5rem;
   @include responsive(laptop) {
     font-size: 1rem;
-    color: #2c2830;
     line-height: 1rem;
     padding: 0;
     margin-top: 0.5;
