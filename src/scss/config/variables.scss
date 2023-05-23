@@ -1,10 +1,22 @@
 :root {
-  /* Variables CSS */
+  --principal: #2c2830;
 }
 
 :root {
-  --principal: #2c2830;}
+  --secundary: #1c191f;
+}
 
 :root {
-  --secundary: #1c191f;}
-  
+  --gradient: linear-gradient(
+    to right,
+    #dddddd,
+    #cecbcb,
+    #bcbbbb,
+    #e9e9e9,
+    #f4f3f3,
+    #dddddd,
+    #bcbcbc,
+    #c0c0c0,
+    #ebeaea
+  );
+}

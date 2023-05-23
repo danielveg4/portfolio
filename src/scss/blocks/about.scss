@@ -1,126 +1,124 @@
 @use "../mixins/responsive.scss" as *;
 @use "../mixins/pseudo.scss" as *;
 
-
-.about{
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 5rem;
+  @include responsive(laptop) {
+    padding: 10rem;
+    padding-top: 15rem;
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    padding-top: 5rem;
-    @include responsive(laptop) {
-        padding: 10rem;
-        padding-top: 55rem;
-        display: flex;
-        flex-direction: row;
-      }
-&__info{
+    flex-direction: row;
+  }
+  &__info {
     display: flex;
     flex-direction: column;
     text-align: center;
-        @include responsive(laptop) {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-
+    @include responsive(laptop) {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
     }
-}
-&__name{
+  }
+  &__name {
     color: var(--principal);
     text-align: center;
     font-size: 2.5rem;
     @include responsive(laptop) {
-        text-align: left;
-        font-size: 3rem;
-        font-weight: 900;
+      text-align: left;
+      font-size: 3rem;
+      font-weight: 900;
     }
-}
-&__prof{
+  }
+  &__prof {
     color: var(--principal);
     margin-top: 0;
     font-size: 1.4rem;
     margin-top: -1.5rem;
     @include responsive(laptop) {
-        font-size: 1.8rem;
-        margin-top: -2rem;
-
+      font-size: 1.8rem;
+      margin-top: -2rem;
     }
-}
-&__text{
+  }
+  &__text {
     color: var(--principal);
     padding-bottom: 5rem;
     @include responsive(laptop) {
-        max-width: 35%;
-
+      max-width: 35%;
     }
-}
-&__skills{
+  }
+  &__skills {
     display: flex;
     flex-direction: column;
     @include responsive(laptop) {
-        display: flex;
-        flex-direction: column;
-        justify-content: right;
-        justify-items: right;
-        padding-top: 8rem;
-        
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      justify-items: right;
+      padding-top: 7rem;
     }
-}
-&__skill{
+  }
+  &__skill {
     display: flex;
     flex-direction: row;
     gap: 5rem;
     justify-content: center;
     align-items: center;
     @include responsive(laptop) {
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        justify-content: right;
-        align-items: center;
-
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: right;
+      align-items: center;
     }
-}
+  }
 
-&__leng{
+  &__leng {
     font-weight: bold;
     color: var(--principal);
     @include responsive(laptop) {
-        font-weight: bold;
-
+      font-weight: bold;
     }
-}
-&__logo{
+  }
+  &__logo {
     height: 40px;
     @include responsive(laptop) {
-        height: 40px;
-
+      height: 40px;
     }
+  }
 }
-}
-
 
 .contactline {
-    @include responsive(laptop) {
+  @include responsive(laptop) {
     width: 480px;
     height: 1.5px;
     background-color: var(--secundary);
-    }
+  }
 }
 
+.aboutline {
+  @include responsive(laptop) {
+    margin-top: 60rem;
+    width: 480px;
+    height: 1.5px;
+    background-color: var(--secundary);
+  }
+}
 
 .footerline {
-        width: 127%;
-        height: 1px;
-        background-color: var(--secundary);
-        position: relative;
-        margin: -2rem;
-        
-    @include responsive(laptop) {
+  width: 127%;
+  height: 1px;
+  background-color: var(--secundary);
+  position: relative;
+  margin: -2rem;
+
+  @include responsive(laptop) {
     width: 105%;
     height: 1.5px;
     background-color: var(--secundary);
     position: relative;
     margin: -2rem;
-    }
+  }
 }
-
