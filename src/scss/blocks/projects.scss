@@ -81,6 +81,8 @@
   }
   &__live {
     text-decoration: underline;
+    align-items: end;
+    justify-content: end;
   }
   &__code {
     text-decoration: underline;
@@ -107,7 +109,7 @@
 .image__insure3 {
   @include responsive(laptop) {
     position: relative;
-    width: 15%;
+    width: 20%;
     z-index: 10;
     top: -300px;
     left: 43%;
@@ -117,9 +119,9 @@
 .image__insure4 {
   @include responsive(laptop) {
     position: relative;
-    width: 15%;
+    width: 20%;
     z-index: 10;
-    top: -600px;
+    top: -500px;
     left: 74%;
   }
 }
